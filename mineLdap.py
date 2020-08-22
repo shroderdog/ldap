@@ -24,6 +24,7 @@ f=open("./creds", "r")
 lines=f.readlines()
 username=lines[0]
 password=lines[1]
+f.close
 # ldap_query = '(passwordExpirationTime <= expDATE ) cn mail passwordExpirationTime'
 # test_query1 = ('(&(objectclass=person)(uid=clay))', attributes=['sn', 'passwordExpirationTime', 'objectclass'])
 # test_query2 = ('dc=sparkred,dc=com, '(&(objectclass=person)(uid=clay))', attributes=['sn', 'passwordExpirationTime', 'objectclass'])
